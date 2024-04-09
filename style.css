@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0vw;
+}
+
+/* Fonts Section starts*/
+
+@font-face {
+    font-family: Style;
+    src: url(Assets/Bythemis\ Quertas\ Personal\ Use.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(Assets/Gilroy-Black.ttf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(Assets/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: Kajiro;
+    src: url(Assets/Kajiro\ Bold.ttf);
+}
+
+/* Fonts Section ends */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Text Section Starts */
+
+#Container #Top {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #111111db;
+}
+
+#Top #Top-Main {
+    width: 80%;
+    height: 10vw;
+    margin: 0vw auto;
+}
+
+/* Nav Starts */
+
+#Top-Main nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 3.5vw;
+}
+
+nav #Nav-Left {
+    display: flex;
+    gap: 3.5vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Nav-Left h1 {
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 500;
+    font-family: "Style";
+    transform: rotate(-10deg);
+}
+
+#Nav-Left #Left-Part {
+    display: flex;
+    gap: 2vw;
+    align-self: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    font-size: 0.85vw;
+    font-weight: 600;
+    font-family: "Gilroy";
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav #Nav-Right {
+    display: flex;
+    gap: 2vw;
+    align-self: center;
+    justify-content: space-between;
+}
+
+/* Nav ends */
+
+/* Center Starts */
+
+#Top #Center-Main {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    gap: 25%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 0vw auto;
+    padding: 0vw 3.5vw;
+}
+
+#Center-Main #Center-Left {
+    width: 40%;
+}
+
+#Center-Left .Left-Items {
+    height: 7vw;
+    overflow: hidden;
+    margin: 0.5vw 0vw;
+}
+
+.Left-Items h2 {
+    position: relative;
+    top: 0%;
+    color: white;
+    font-size: 8.75vw;
+    font-weight: 100;
+    line-height: 7.5vw;
+    font-family: "Kajiro";
+    transition: all ease 0.65s;
+}
+
+#Center-Left button {
+    width: 12.75vw;
+    margin: 1vw 0vw;
+}
+
+#Center-Left button a {
+    color: black;
+    font-size: 2.85vw;
+    font-weight: 100;
+    font-family: "Kajiro";
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#Center-Main #Center-Right {
+    width: 35%;
+    display: flex;
+    gap: 1.25vw;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#Center-Right p {
+    color: white;
+    font-size: 1vw;
+    font-weight: 100;
+    font-family: "Gilroy";
+    text-align: right;
+    text-decoration: none;
+}
+
+#Center-Right #Image {
+    width: 15.5vw;
+    margin-bottom: 2vw;
+}
+
+#Image img {
+    width: 100%;
+    height: 8.75vw;
+    object-fit: cover;
+    margin-bottom: 1.25vw;
+}
+
+#Image p {
+    text-align: right;
+}
+
+#Center-Right #P-Last {
+    width: 60%;
+}
+
+#Center-Right #Animate ul li {
+    color: white;
+    font-size: 1vw;
+    font-weight: 100;
+    font-family: "Gilroy";
+    text-align: right;
+    text-decoration: none;
+}
+
+/* Center Ends */
+
+/* Text Section ends */
+
+/* Back Sections Starts */
+
+#Container #Back {
+    width: 100%;
+    height: 100vh;
+}
+
+#Back img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+#Back video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

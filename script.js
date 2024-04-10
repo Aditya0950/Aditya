@@ -32,3 +32,11 @@ nav.addEventListener("mouseleave", function () {
         a.style.top = "0%";
     })
 })
+
+let crsr = document.querySelector("#Cursor");
+let container = document.querySelector("#Container");
+
+container.addEventListener("mousemove", function (dets) {
+    crsr.style.top = dets.y + "px";
+    crsr.style.left = dets.x + "px";
+})

@@ -48,7 +48,7 @@ body {
     z-index: 9;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(70%, -70%);
     font-weight: 100;
     font-size: 0.65vw;
     font-family: "Gilroy";

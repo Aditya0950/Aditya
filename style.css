@@ -88,13 +88,27 @@ nav #Nav-Left {
     justify-content: space-between;
 }
 
+#Left-Part .Nav-Elem {
+    height: 1vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.Nav-Elem a {
+    display: block;
+}
+
 nav a {
+    position: relative;
+    top: 0%;
     color: white;
     font-size: 0.85vw;
     font-weight: 600;
     font-family: "Gilroy";
     text-transform: uppercase;
     text-decoration: none;
+    transition: all ease 0.65s;
 }
 
 nav #Nav-Right {
@@ -102,6 +116,13 @@ nav #Nav-Right {
     gap: 2vw;
     align-self: center;
     justify-content: space-between;
+}
+
+#Nav-Right .Nav-Elem {
+    height: 1vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 /* Nav ends */
@@ -144,6 +165,14 @@ nav #Nav-Right {
 #Center-Left button {
     width: 12.75vw;
     margin: 1vw 0vw;
+    display: block;
+    color: black;
+    font-size: 2.85vw;
+    font-weight: 100;
+    font-family: "Kajiro";
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #Center-Left button a {
@@ -192,7 +221,14 @@ nav #Nav-Right {
     width: 60%;
 }
 
-#Center-Right #Animate ul li {
+#Center-Right #Animate h3 {
+    color: red;
+    font-weight: 100;
+    font-size: 2vw;
+    font-family: "Style";
+}
+
+#Center-Right #Animate p {
     color: white;
     font-size: 1vw;
     font-weight: 100;
@@ -217,4 +253,89 @@ nav #Nav-Right {
     height: 100%;
     position: absolute;
     object-fit: cover;
+}
+
+#Back video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive */
+
+@media (max-width :600px) {
+    #Nav-Left h1 {
+        font-size: 5vw;
+    }
+
+    #Left-Part .Nav-Elem {
+        height: 2.25vw;
+    }
+
+    #Nav-Right .Nav-Elem {
+        height: 2.25vw;
+    }
+
+    nav a {
+        font-size: 2vw;
+    }
+
+    #Top #Center-Main {
+        gap: 0%;
+        height: 90%;
+    }
+
+    #Center-Main #Center-Left {
+        width: 55%;
+    }
+
+    #Center-Left .Left-Items {
+        height: 10vw;
+    }
+
+    .Left-Items h2 {
+        font-size: 14vw;
+        line-height: 10.75vw;
+        text-wrap: nowrap;
+    }
+
+    #Center-Left button {
+        width: 25vw;
+        font-size: 5.75vw;
+        margin: 2vw 0vw;
+    }
+
+    #Center-Main #Center-Right {
+        width: 45%;
+        margin-top: 65.75vw;
+    }
+
+    #Center-Right p {
+        font-size: 2vw;
+    }
+
+    #Center-Right #Image {
+        width: 30.5vw;
+    }
+
+    #Image img {
+        height: 17.5vw;
+    }
+
+    #Center-Right #P-Last {
+        width: 75%;
+    }
+
+    #Center-Right #Animate h3 {
+        font-size: 4.5vw;
+    }
+
+    #Center-Right #Animate p {
+        font-size: 2vw;
+    }
+
+    #Back img,
+    video {
+        object-fit: contain;
+    }
 }
